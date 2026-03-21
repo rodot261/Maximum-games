@@ -234,7 +234,7 @@
     }
 
     function buildCards(list) {
-        if (!list.length) return '<p class="empty-state">Игр не найдено</p>';
+        if (!list.length) return '<p class="empty-state">этого нет, зачем и тебе это ????</p>';
         return list.map(g => {
             const thumb = g.image
                 ? `<img class="game-card-img" src="games/${esc(g.image)}" alt="${esc(g.title)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
